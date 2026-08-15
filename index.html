@@ -675,7 +675,7 @@
     <div class="hint-marquee">
       <div class="hint-marquee-track">
         <span class="hint-marquee-text">𝐓𝖆𝖕 𝐨𝖓 𝐭𝖍𝖗𝖊𝖊 𝐝𝖔𝖙𝖘 𝐭𝖔 𝐬𝖊𝖑𝖊𝖈𝖙 𝐲𝖔𝖚𝖗 𝐩𝖑𝖆𝐲𝖑𝖎𝖘𝖙 & 𝐬𝖔𝖓𝖌𝖘!</span>
-        <span class="hint-marquee-text" aria-hidden="true">𝐓𝖆𝖕 𝐨𝖓 𝐭𝖍𝖗𝖊𝖊 𝐝𝖔𝖙𝖘 𝐭𝖔 𝐬𝖊𝖑𝖊𝖈𝖙 𝐲𝖔𝖚𝖗 𝐩𝖑𝖆𝐲𝖑𝖎𝖘𝖙 𝐬𝖔𝖓𝖌𝖘</span>
+        <span class="hint-marquee-text" aria-hidden="true">𝐓𝖆𝖕 𝐨𝖓 𝐭𝖍𝖗𝖊𝖊 𝐝𝖔𝖙𝖘 𝐭𝖔 𝐬𝖊𝖑𝖊𝖈𝖙 𝐲𝖔𝖚𝖗 𝐩𝖑𝖆𝐲𝖑𝖎𝖘𝖙 𝐬𝖔𝖓𝖌𝖘!</span>
       </div>
     </div>
 
@@ -1002,7 +1002,7 @@
 
     const listenBtn = document.createElement('button');
     listenBtn.className = 'menu-item';
-    listenBtn.textContent = '𝐋𝖎𝖘𝖙𝖊𝖓 𝐭𝖍𝖎𝖘 𝐩𝖑𝖆𝐲𝖑𝖎𝖘𝖙';
+    listenBtn.textContent = '𝐋𝖎𝖘𝖙𝖊𝖓 𝐭𝖍𝖎𝖘 𝐩𝖑𝖆𝐲𝖑𝖎𝖘𝖙!';
     listenBtn.addEventListener('click', () => {
       switchToPlaylist(pl.id, false);
       menuDropdown.classList.remove('open');
@@ -1032,12 +1032,12 @@
 
     const loading = document.createElement('div');
     loading.className = 'menu-loading';
-    loading.textContent = 'Gaane load ho rahe hain...';
+    loading.textContent = '𝐒𝖔𝖓𝖌𝖘 𝐚𝖗𝖊 𝐥𝖔𝖆𝖉𝖎𝖓𝖌...';
     menuDropdown.appendChild(loading);
 
     fetchPlaylistVideoIds(pl, (videoIds) => {
       if (!videoIds || !videoIds.length){
-        loading.textContent = 'Songs nahi mil paaye.';
+        loading.textContent = '𝐂𝖆𝖓 𝐧𝖔𝖙 𝐠𝖊𝖙𝖙𝖎𝖓𝖌 𝐭𝖍𝖊 𝐬𝖔𝖓𝖌𝖘!';
         return;
       }
       fetchTitles(videoIds).then(songs => {
