@@ -796,7 +796,7 @@
   }
 
   function resetDisplay(){
-    trackTitle.textContent = '𝐏𝖑𝖆𝐲𝖑𝖎𝖘𝖙 𝐚𝖗𝖊 𝐥𝖔𝖆𝖉𝖎𝖓𝖌...';
+    trackTitle.textContent = '𝐏𝖑𝖆𝐲𝖑𝖎𝖘𝖙 𝐚𝖗𝖊 𝐥𝖔𝖆𝖉𝖎𝖓𝖌 𝐬𝖔 𝐰𝖆𝖎𝖙 2-3 𝐬𝖊𝖈..';
     trackSub.textContent = '';
     curTime.textContent = '0:00';
     durTime.textContent = '0:00';
@@ -906,7 +906,7 @@
           }
         },
         onError: () => {
-          trackTitle.textContent = 'Ye playlist load nahi ho payi.';
+          trackTitle.textContent = '𝐓𝖍𝖎𝖘 𝐩𝖑𝖆𝐲𝖑𝖎𝖘𝖙 𝐜𝖆𝖓 𝐧𝖔𝖙 𝐥𝖔𝖆𝖉𝖎𝖓𝖌 𝐫𝖎𝖌𝖍𝖙 𝐧𝖔𝖜!';
           trackSub.textContent = '';
           hideButterflies();
         }
@@ -1042,7 +1042,7 @@
 
     const loading = document.createElement('div');
     loading.className = 'menu-loading';
-    loading.textContent = '𝐒𝖔𝖓𝖌𝖘 𝐚𝖗𝖊 𝐥𝖔𝖆𝖉𝖎𝖓𝖌 𝖘𝖔 𝐛𝖊 𝐩𝖆𝖙𝖎𝖊𝖓𝖙t...';
+    loading.textContent = '𝐒𝖔𝖓𝖌𝖘 𝐚𝖗𝖊 𝐥𝖔𝖆𝖉𝖎𝖓𝖌 𝖘𝖔 𝐛𝖊 𝐩𝖆𝖙𝖎𝖊𝖓𝖙..';
     menuDropdown.appendChild(loading);
 
     fetchPlaylistVideoIds(pl, (videoIds) => {
