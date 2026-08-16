@@ -1,5 +1,6 @@
 {
   "name": "Musicfy",
+  "version": "1.0.1",
   "short_name": "Musicfy",
   "description": "Musicfy — Aditya ki curated YouTube playlists, ek jagah sunne ke liye.",
   "start_url": "./index.html",
